@@ -2,7 +2,7 @@
 
 //BURGER MENU
 //Création d'une constante pour stocker le burger menu
-const burger = document.querySelector(".burger");
+const burger = document.querySelector(".navigation__burger");
 //Création d'une constante pour stocker la liste des liens
 const navmenu = document.querySelector(".navigation__list");
 //Lors de la détection du click sur le bouton burger : 
