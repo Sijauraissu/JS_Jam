@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-type-paragraph;
+    line-height: 1.4;
+    background-color: $color-background;
+    color: $color-text;
+}
+//Navigation Mobile + Burger Menu
+.navigation {
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    background-color: $color-background;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__list {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 100%;
+        top: 0;
+        transition: 0.3s;
+        background-color: $color-block;
+    }
+
+    &__el {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__logo {
+        font-family: $font-type-title;
+        font-size: $font-size-lg;
+        margin-left: 24px;
+        color: $color-title;
+    }
+}
+
+.burger {
+    display: block;
+    z-index: 1000;
+    margin-right: 24px;
+
+    &__bar {
+        width: 44px;
+        height: 7px;
+        display: block;
+        padding: 0;
+        margin: 6px 0px;
+        transition: 0.5s;
+        background-color: $color-block-secondary;
+    }
+}
+
+.activeNav {
+    left: 0;
+    z-index: 100;
+    opacity: 1;
+}
+  
+.activeBurger {
+    z-index: 100;
+  
+}
+.activeBurger .burger__bar:nth-child(2) {
+    opacity: 0;
+}
+.activeBurger .burger__bar:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);
+    background: $color-background-secondary;
+}
+  .activeBurger .burger__bar:nth-child(3) {
+    transform: translateY(-16px) rotate(-45deg);
+    background: $color-background-secondary;
+}
+
+//Section Hero Mobile
+.hero {
+    height: 100vh;
+    margin: 0 1rem;
+
+    &__title {
+        font-family: $font-type-title;
+        font-size: $font-size-xxxl;
+        color: $color-title;
+        margin: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+    &__smalltitle {
+        font-family: $font-type-title;
+        font-size: $font-size-xxl;
+        color: $color-title;
+        margin: calc(4rem + 24px) 1rem 0.5rem 1rem;
+    }
+
+    &__catchworld {
+        font-size: 20px;
+    }
+
+    &__img {
+        height: 40%;
+        width: 80%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../assets/images/js_froggy_mobile@2x.png);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

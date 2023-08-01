@@ -9,15 +9,16 @@ $font-size-xl: clamp(2.83rem, 2.53vw + 2.19rem, 4.22rem);
 $font-size-xxl: clamp(4rem, 4.24vw + 2.94rem, 6.33rem);
 $font-size-xxxl: clamp(5.65rem, 6.98vw + 3.91rem, 9.49rem);
 //Color
-$-color-title: #094067;
-$-color-text: #4B5561;
-$-color-background: #D8EEFE;
-$-color-background-secondary: #FFFFFE;
-$-color-background-third: #A7DAFF;
-$-color-block: #1C70AD;
-$-color-lilypad: #B2DFDB;
-$-color-lilypad-border: #9BD5D0;
-$-color-button: #B2DFDB;
+$color-title: #094067;
+$color-text: #4B5561;
+$color-background: #D8EEFE;
+$color-background-secondary: #FFFFFE;
+$color-background-third: #A7DAFF;
+$color-block: #1C70AD;
+$color-block-secondary: #094067;
+$color-lilypad: #B2DFDB;
+$color-lilypad-border: #9BD5D0;
+$color-button: #B2DFDB;
 //Hover
-$-color-hover-button: #78C5BE;
-$-color-hover-link: #094067;
+$color-hover-button: #78C5BE;
+$color-hover-link: #094067;

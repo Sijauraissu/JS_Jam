@@ -4,7 +4,7 @@
   <title>Js Jam</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Primary Meta Tags -->
 <meta name="title" content="JS Jam" />
 <meta name="description" content="Découvrez le premier site d'entraide entre étudiants sur le JavaScript." />
@@ -23,6 +23,7 @@
 <meta property="twitter:description" content="Découvrez le premier site d'entraide entre étudiants sur le JavaScript." />
 <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
+
 <!-- Meta Tags Generated with https://metatags.io -->
 
 <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
@@ -40,9 +41,9 @@
 
 <body>
   <header class="header">
-    <p class="logo">JS Jam</p>
 
     <nav class="navigation">
+      <p class="navigation__logo">JS Jam</p>
       <ul class="navigation__list">
         <li class="navigation__el"><a class="navigation__link" href=""></a>Lien</li>
         <li class="navigation__el"><a class="navigation__link" href=""></a>Lien</li>
@@ -52,22 +53,22 @@
         <li class="navigation__el"><a class="navigation__link" href=""></a>Lien</li>
         <li class="navigation__el"><a class="navigation__link" href=""></a>Lien</li>
       </ul>
-    </nav>
 
-    <div class="navigation__burger">
-      <span class="navigation__bar"></span>
-      <span class="navigation__bar"></span>
-      <span class="navigation__bar"></span>
-    </div>
+      <div class="burger">
+        <span class="burger__bar"></span>
+        <span class="burger__bar"></span>
+        <span class="burger__bar"></span>
+      </div>
+    </nav>
   </header>
 
   <main>
 
     <section class="hero">
-      <p>Découvrez</p>
-      <h1>JS Jam</h1>
-      <div></div>
-      <p>Votre premier site d’entraide entre étudiants pour le JavaScript !</p>
+      <p class="hero__smalltitle">Découvrez</p>
+      <h1 class="hero__title">JS Jam</h1>
+      <div class="hero__img"></div>
+      <p class="hero__catchworld">Votre premier site d’entraide entre étudiants pour le JavaScript !</p>
     </section>
     
     <section class="context">
