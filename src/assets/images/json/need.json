@@ -1,0 +1,30 @@
+{
+    "need":[
+        {
+            "problem":"L’anglais",
+            "description":"“J’ai vraiment du mal avec l’anglais. Je vois beaucoup d'explications, de sites ou de commentaires qui ne sont pas traduits. Même avec les traducteurs, j’ai du mal. J’ai l’impression de passer à côté de certaines nuances.”",
+            "who":"— Anonyme."
+        },
+        {
+            "problem":"La théorie",
+            "description":"“Je n’ai jamais rien compris avec la théorie. J'ai toujours besoin de tester et d’essayer par moi-même. Sinon ça ne rentre pas. La plupart des sites ne proposent que des approches théoriques.”",
+            "who":"— Anonyme."
+        },
+        {
+            "problem":"Apprendre en solo",
+            "description":"“J’ai du mal à apprendre toute seule. Je comprends mieux quand on est en groupe. On fait de temps en temps des appels mais pas assez à mon goût.”",
+            "who":"— Anonyme."
+        },
+        {
+            "problem":"La toxicité",
+            "description":"“J’ai arrêté de vouloir apprendre par moi même. Je suis allé sur des forums pour poser des questions, on s’est foutu de ma gueule. Comme quoi j’étais qu’un noob, que mes questions étaient débiles. Ça ne m’a pas du tout donné envie de continuer à apprendre.",
+            "who":"— Anonyme."
+        },
+        {
+            "problem":"Le code en ligne",
+            "description":"“Il m’arrive souvent de prendre un code en ligne pour faire des tests  ou quoi. Le problème c’est qu’il n’est jamais expliqué et qu’un coup sur deux, il ne marche pas chez moi.”",
+            "who":"— Anonyme."
+        }
+
+    ]
+}
