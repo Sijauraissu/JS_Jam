@@ -19,7 +19,7 @@ body {
 }
 
 .text {
-    margin: 0rem 3rem 1rem 3rem;
+    margin: 0rem 2rem 1rem 2rem;
 }
 //Navigation Mobile + Burger Menu
 .navigation {
@@ -181,11 +181,13 @@ body {
 
 //Section Interviews
 .interviews {
+    background-color: $color-background-third;
+    padding-top: 2rem;
     &__title {
         font-size: $font-size-lg;
         font-family: $font-type-title;
         color: $color-title;
-        margin: 2rem
+        margin: 0rem 2rem 2rem
     }
 
     &__img {
@@ -221,5 +223,57 @@ body {
     &__legend {
         align-self: flex-end;
         margin-right: 2rem;
+    }
+}
+
+// Section Need
+.need {
+
+}
+
+.message {
+    height: fit-content;
+    width: fit-content;
+    border-radius: 12px 12px 12px 0;
+    background-color: $color-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $color-text-secondary;
+    padding: 2rem 1rem;
+    margin: 1rem 3rem 0rem;
+}
+
+.citation {
+    font-style: italic;
+}
+
+.needs {
+    &__problemcontainer {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    &__problem {
+        // margin: 1rem;
+    }
+
+    &__citation {
+
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    &__img {
+        height: 154px;
+        width: 170px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url();
+        margin: 2rem auto; 
     }
 }

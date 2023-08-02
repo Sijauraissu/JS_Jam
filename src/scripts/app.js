@@ -24,11 +24,57 @@ document.querySelectorAll(".navigation__link").forEach((link) =>
 );
 
 //
+
+var step = 0;
+var element = 0;
+let before = document.getElementById("needleft");
+let next = document.getElementById("needright");
+var tabneed = [];
+var newtext = document.querySelectorAll(".needs__el");
+var needimage = document.querySelector(".container__img");
+
+function need(element) {
+    var out = [];
+    var array = [];
+    out.push(element[step]);
+    console.log(step);
+  
+    var array = [out[0].problem, out[0].description, out[0].who];
+    var needimageright = [out[0].img];
+    for (let i=0; i<array.length; i++){
+        newtext[i].innerHTML = array[i];
+    }
+    needimage.style["background-image"] = needimageright;
+}
+
 fetch("./assets/json/need.json")
     .then(
         (response) => {
             response.json().then((text) => {
             console.log(text);
+
+            for (let i=0; i<text.need.length; i++){
+                tabneed.push(text.need[i]);
+                console.table(tabneed);
+            }
+            element=tabneed;
+            need(tabneed);
+
+            next.addEventListener("click", function() {
+                step++;
+                if (step >= 5){
+                    step=0;
+                }
+                need(element);
+            })
+            
+            before.addEventListener("click", function() {
+                step--;
+                if (step < 0){
+                    step=4;
+                }
+                need(element);
+            })
         })
     }
 );
