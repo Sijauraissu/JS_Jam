@@ -22,3 +22,13 @@ document.querySelectorAll(".navigation__link").forEach((link) =>
         navmenu.classList.remove("activeNav");
     })
 );
+
+//
+fetch("./assets/json/need.json")
+    .then(
+        (response) => {
+            response.json().then((text) => {
+            console.log(text);
+        })
+    }
+);
