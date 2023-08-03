@@ -342,3 +342,14 @@ body {
     width: 100%;
 }
 
+
+.presentation {
+    &__img{
+        height: 220px;
+        width: 280px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 2rem auto;
+        background-image: url(../assets/images/froggy_presentation@2x.png);
+    }
+}
