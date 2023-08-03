@@ -5,10 +5,7 @@
 }
 
 body {
-    font-family: $font-type-paragraph;
-    line-height: 1.4;
     background-color: $color-background;
-    color: $color-text;
 }
 
 .subtitle {
@@ -20,6 +17,10 @@ body {
 
 .text {
     margin: 0rem 2rem 1rem 2rem;
+    font-size: $font-size-base;
+    font-family: $font-type-paragraph;
+    line-height: 1.4;
+    color: $color-text;
 }
 //Navigation Mobile + Burger Menu
 .navigation {
@@ -154,6 +155,7 @@ body {
         justify-self: center; 
         grid-area: 1 / 1 / 2 / 2; 
         font-size: $font-size-md;
+        color: $color-title;
         margin: 2rem 1rem 1rem 1rem;
     }
 
@@ -228,7 +230,6 @@ body {
 
 // Section Need
 .need {
-
 }
 
 .message {
@@ -249,9 +250,16 @@ body {
 }
 
 .needs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 550px;
+    margin-top: 2rem;
+
     &__problemcontainer {
         margin-top: 2rem;
         padding: 1rem;
+        max-width: calc(100% - 6rem);
     }
 
     &__problem {
@@ -259,7 +267,11 @@ body {
     }
 
     &__citation {
+        max-width: 70%;
+    }
 
+    &__legend {
+        text-align: end;
     }
 }
 
@@ -267,6 +279,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     
     &__img {
         height: 154px;
@@ -274,6 +287,41 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url();
-        margin: 2rem auto; 
+        margin: 2rem 0; 
+    }
+}
+
+.joke {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__el {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        height: 72px;
+        width: 72px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 1rem 2rem;
+        &--code {
+            background-image: url(../assets/images/code@2x.png);
+        }
+
+        &--eat {
+            background-image: url(../assets/images/eat@2x.png);
+        }
+
+        &--sleep {
+            background-image: url(../assets/images/sleep@2x.png);
+        }
+
+        &--repeat {
+            background-image: url(../assets/images/repeat@2x.png);
+        }
     }
 }
