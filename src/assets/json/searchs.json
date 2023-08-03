@@ -1,0 +1,26 @@
+{
+    "need":[
+        {
+            "presentation":"MDN est l'acronyme de Mozilla Developer Network. C’est est un site de théorie reprenant plusieurs langages de code. Pour ce projet, je me suis surtout concentré sur la partie liée au JavaScript.",
+            "text":"On peut retrouver une documentation technique bien détaillée ainsi que des exemples d'utilisation du code, les références web et la compatibilité avec les navigateurs./n/nDe plus, MDN permet aussi à la communauté de soumettre des modifications afin d'améliorer la base de donnée existante."
+        },
+        {
+            "presentation":"Codepen est une plateform participative et collaborative qui permet aux développeurs de coder, tester et mettre en ligne leur travail.",
+            "text":"La fonctionnalité première de Codepen est son éditeur de coder et la visualisation qui va avec."
+        },
+        {
+            "presentation":"",
+            "text":""
+        },
+        {
+            "presentation":"",
+            "text":""
+        },
+        {
+            "presentation":"",
+            "text":""
+        }
+
+    ]
+}
+

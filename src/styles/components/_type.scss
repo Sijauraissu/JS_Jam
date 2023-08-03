@@ -307,7 +307,7 @@ body {
         width: 72px;
         background-size: contain;
         background-repeat: no-repeat;
-        margin: 1rem 2rem;
+        margin: 1rem 3rem;
         &--code {
             background-image: url(../assets/images/code@2x.png);
         }
@@ -325,3 +325,20 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .joke__img{
+        margin: 1rem 2rem;
+    }
+}
+
+//Section Recherches
+.search {
+    background-color: $color-background-secondary;
+}
+
+.swiper {
+    height: 400px;
+    width: 100%;
+}
+

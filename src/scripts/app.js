@@ -1,4 +1,7 @@
 "use strict"
+//Swiper
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 //BURGER MENU
 //Création d'une constante pour stocker le burger menu
@@ -24,7 +27,6 @@ document.querySelectorAll(".navigation__link").forEach((link) =>
 );
 
 //
-
 var step = 0;
 var element = 0;
 let before = document.getElementById("needleft");
@@ -78,3 +80,27 @@ fetch("./assets/json/need.json")
         })
     }
 );
+
+//
+var swiper = new Swiper(".mySwiper", {
+    // effect: "coverflow",
+	// centeredSlides: true,
+
+	loop: true,
+	slidesPerView: "2",
+	coverflowEffect: {
+		// rotate: 0,
+		// stretch: 30,
+		// depth: 100,
+		// modifier: 5,
+		// slideShadows: true
+	},
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev"
+	},
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true
+	}
+})
