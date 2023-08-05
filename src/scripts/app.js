@@ -81,26 +81,48 @@ fetch("./assets/json/need.json")
     }
 );
 
-//
-var swiper = new Swiper(".mySwiper", {
-    // effect: "coverflow",
-	// centeredSlides: true,
+// Fonctionnalité
+var fonctionnalitiesbutton = document.querySelectorAll(".fonctionnality__el");
+var fonctionnalityarticle = document.querySelectorAll(".fonctionnality__article");
+for(let i = 0; i<fonctionnalitiesbutton.length; i++){
+    fonctionnalitiesbutton[i].addEventListener(("click"),(e)=>{
+        console.log(i);
 
-	loop: true,
-	slidesPerView: "2",
-	coverflowEffect: {
-		// rotate: 0,
-		// stretch: 30,
-		// depth: 100,
-		// modifier: 5,
-		// slideShadows: true
-	},
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev"
-	},
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true
-	}
-})
+        for(let i = 0; i<fonctionnalitiesbutton.length; i++){
+            fonctionnalitiesbutton[i].classList.remove("activefct");
+            fonctionnalityarticle[i].classList.add("hidden");
+        }
+
+        fonctionnalitiesbutton[i].classList.add("activefct");
+        fonctionnalityarticle[i].classList.remove("hidden");
+    });
+}
+
+
+// function fonctionnalities(element) {
+//     var out = [];
+//     var array = [];
+//     out.push(element[step]);
+//     console.log(step);
+  
+//     var array = [out[0].title, out[0].description];
+//     for (let i=0; i<array.length; i++){
+//         fonctionnalitiesel[i].innerHTML = array[i];
+//     }
+// }
+
+// fetch("./assets/json/fonctionnalities.json")
+//     .then(
+//         (response) => {
+//             response.json().then((text) => {
+//             console.log(text);
+
+//             for (let i=0; i<text.fonctionnalities.length; i++){
+//                 tabfonctionnality.push(text.fonctionnalities[i]);
+//                 console.table(tabfonctionnality);
+//             }
+//             element=tabfonctionnality;
+//             fonctionnalities(tabfonctionnality);
+//         })
+//     }
+// );

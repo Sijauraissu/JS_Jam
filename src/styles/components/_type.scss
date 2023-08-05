@@ -262,10 +262,6 @@ body {
         max-width: calc(100% - 6rem);
     }
 
-    &__problem {
-        // margin: 1rem;
-    }
-
     &__citation {
         max-width: 70%;
     }
@@ -342,7 +338,52 @@ body {
     width: 100%;
 }
 
+.fonctionnality {
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 2rem 1rem;
+    }
 
+    &__el {
+        margin: 0.5rem;
+        padding: 0.6rem;
+        background-color: $color-lilypad;
+        border: 3px $color-lilypad-border solid;
+        border-radius: 12px;
+
+    }
+
+    &__article{
+
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        object-fit: none;
+        background-image: url(../assets/images/lilypad_fonctionnality@2x.png);
+        padding: 3rem 0rem;
+    }
+
+    &__name {
+        text-align: center;
+        margin: 2rem 1rem 1rem;
+        font-family: $font-type-paragraph;
+    }
+
+    &__description {
+        margin-bottom: 2rem;
+    }
+}
+
+.activefct {
+    background-color: $color-lilypad-border;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
 .presentation {
     &__img{
         height: 220px;
