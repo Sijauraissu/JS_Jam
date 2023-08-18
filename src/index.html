@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Js Jam</title>
+  <title>Js Jam - TFA - Demasy_Nathan</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,17 +24,32 @@
 <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 <!-- Meta Tags Generated with https://metatags.io -->
 
-<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-<link rel="manifest" href="assets/images/favicon/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="../assets/images/favicon/site.webmanifest">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,700;1,400&family=Concert+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;1,400&family=Concert+One&display=swap" rel="stylesheet">
+
+
 <link rel="stylesheet" href="styles/app.css">
 
-  <script src="scripts/app.js" defer></script>
+
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script
+<script src="https://kit.fontawesome.com/951dd70e22.js" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://kit.fontawesome.com/951dd70e22.js" crossorigin="anonymous"></script>
+<script src="scripts/app.js" defer></script>
 </head>
 
 <body>
@@ -43,13 +58,12 @@
     <nav class="navigation">
       <p class="navigation__logo">JS Jam</p>
       <ul class="navigation__list">
-        <li class="navigation__el"><a class="navigation__link" href=""></a>Lien</li>
-        <li class="navigation__el"><a class="navigation__link" href=""></a>Lien</li>
-        <li class="navigation__el"><a class="navigation__link" href=""></a>Lien</li>
-        <li class="navigation__el"><a class="navigation__link" href=""></a>Lien</li>
-        <li class="navigation__el"><a class="navigation__link" href=""></a>Lien</li>
-        <li class="navigation__el"><a class="navigation__link" href=""></a>Lien</li>
-        <li class="navigation__el"><a class="navigation__link" href=""></a>Lien</li>
+        <li class="navigation__el"><a class="navigation__link activeNavLink" href="#sectionacceuil">Accueil</a></li>
+        <li class="navigation__el"><a class="navigation__link" href="#sectioninterviews">Rencontre</a></li>
+        <li class="navigation__el"><a class="navigation__link" href="#sectionneed">Besoins</a></li>
+        <li class="navigation__el"><a class="navigation__link" href="#sectionsearch">Recherches</a></li>
+        <li class="navigation__el"><a class="navigation__link" href="#sectionfonctionnality">Fonctionnalités</a></li>
+        <li class="navigation__el"><a class="navigation__link" href="#sectionpresentation">Présentation</a></li>
       </ul>
 
       <div class="navigation__burger">
@@ -62,29 +76,29 @@
 
   <main>
 
-    <section class="hero">
+    <section id="sectionacceuil" class="hero">
       <p class="hero__smalltitle">Découvrez</p>
       <h1 class="hero__title">JS Jam</h1>
       <div class="hero__img"></div>
-      <p class="hero__catchworld">Votre premier site d’entraide entre étudiants pour le JavaScript !</p>
+      <p class="hero__catchworld">Votre premier site d’entraide entre étudiants pour le JavaScript&hairsp;!</p>
     </section>
     
     <section class="context">
       <h2 class="context__title">Contexte</h2>
-      <p class="context__situation">En tant qu’étudiant en Web,  nous sommes amenés à toucher à tout un tas de logiciels et de langages, à faire évoluer nos compétences. Avec comme objectif final d’être capable de rendre les sites les plus propres possibles.</p>
-      <p class="context__problem">Et pourtant, l’apprentissage de certains langages posent plus de problèmes que d’autres, en particulier le JavaScript. C’est sur cette problématique que j’ai décidé de me concentrer dans le cadre de ce TFA.</p>
+      <p class="context__situation text">En tant qu’étudiant en Web,  nous sommes amenés à toucher à tout un tas de logiciels et de langages, à faire évoluer nos compétences. Avec comme objectif final d’être capable de rendre les sites les plus propres possibles.</p>
+      <p class="context__problem text">Et pourtant, l’apprentissage de certains langages posent plus de problèmes que d’autres, en particulier le JavaScript. C’est sur cette problématique que j’ai décidé de me concentrer dans le cadre de ce TFA.</p>
       <div class="context__img"></div>
     </section>
 
-    <section class="interviews">
-      <h2 class="interviews__title">Rencontres</h2>
-      <p class="text interviews__">Afin de procéder à des interviews efficaces, j’ai élaboré un questionnaire en classe avec l’aide de mes professeurs.</p>
-      <p class="text">J’ai fonctionné de deux manières. La première, scolaire, en posant des questions à l’aide du questionnaire fait préalablement. La seconde, moins conventionnelle, consistait à se retrouver autour d’un verre et à discuter du sujet plus librement.</p>
+    <section id="sectioninterviews" class="interviews">
+      <h2 class="subtitle interviews__title">Rencontres</h2>
+      <p class="interviews__text interviews__text--question text bold">Afin de procéder à des interviews efficaces, j’ai élaboré un questionnaire en classe avec l’aide de mes professeurs.</p>
+      <p class="interviews__text interviews__text--work text">J’ai fonctionné de deux manières. La première, scolaire, en posant des questions à l’aide du questionnaire fait préalablement. La seconde, moins conventionnelle, consistait à se retrouver autour d’un verre et à discuter du sujet plus librement.</p>
       <div class="interviews__img interviews__img--drink"></div>
-      <p class="text">Et pour ce faire, rien de plus facile. Mon public cible se trouvant sur le banc d’à côté. J’ai pu, durant les temps de pauses, interviewer mes camarades de deuxième année.</p>
-      <p class="text">N’ayant pas cours avec les troisièmes, j’ai proposé à certains d’aller boire un verre en fin de journée pour leur poser mes questions et enrichir mon questionnaire.</p>
+      <p class="interviews__text interviews__text--desk text">Et pour ce faire, rien de plus facile. Mon public cible se trouvant sur le banc d’à côté. J’ai pu, durant les temps de pauses, interviewer mes camarades de deuxième année.</p>
+      <p class="interviews__text interviews__text--drink text">N’ayant pas cours avec les troisièmes, j’ai proposé à certains d’aller boire un verre en fin de journée pour leur poser mes questions et enrichir mon questionnaire.</p>
       <figure class="quote">
-        <blockquote class="quote__content">“Ce n’est pas moi qui n’aime pas le JS, c’est le JS qui ne n’aime pas”</blockquote>
+        <blockquote class="quote__content">&laquo;&hairsp;Ce n’est pas moi qui n’aime pas le JS, c’est le JS qui ne n’aime pas&hairsp;&raquo;</blockquote>
         <figcaption class="quote__legend">
           <cite class="quote__author">— Anonyme.</cite>
         </figcaption>
@@ -92,20 +106,22 @@
       <div class="interviews__img interviews__img--lilypad"></div>
     </section>
 
-    <section class="need">
+    <section id="sectionneed" class="need">
       <h2 class="subtitle need__title">Besoins</h2>
-      <p class="text">Avec l’aide de mes interviews, j’ai pu obtenir une liste de besoins spécifiques. Je les ai ensuite triés afin de garder ceux qui revenaient le plus.</p>
+      <p class="need__intro text bold">Avec l’aide de mes interviews, j’ai pu obtenir une liste de besoins spécifiques. Je les ai ensuite triés afin de garder ceux qui revenaient le plus.</p>
       
       <article class="needs">
         <figure class=" message needs__problemcontainer">
           <blockquote class="citation needs__problem needs__el"></blockquote>
         </figure>
+
         <figure class="message needs__citation">
           <blockquote class="citation needs__content needs__el"></blockquote>
           <figcaption class="needs__legend">
             <cite class="citation needs__author needs__el"></cite>
           </figcaption>
         </figure>
+
         <div class="container">
           <svg id="needleft" width="48" height="48" class="container__arrow container__arrow--left" fill="#3da9fc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="m10.5 19.5 1.057-1.058-5.685-5.692H21v-1.5H5.872l5.685-5.692L10.5 4.5 3 12l7.5 7.5Z"></path>
@@ -117,7 +133,7 @@
         </div>
       </article>
 
-      <p class="text">Je me suis aussi rendu compte que la routine posait problème. Certains ont toujours l’impression de travailler sur la même chose, d’avoir les mêmes problèmes.</p>
+      <p class="need__habitude text">Je me suis aussi rendu compte que la routine posait problème. Certains ont toujours l’impression de travailler sur la même chose, d’avoir les mêmes problèmes.</p>
 
       <ul class="joke">
         <li class="joke__el">
@@ -139,34 +155,104 @@
       </ul>
     </section>
 
-    <section class="search">
-      <h2 class="subtitle">Recherches</h2>
-      <p class="text">Afin de mieux appréhender mon projet ainsi que de me permettre d’imaginer des solutions réalisables, j’ai fais des audits de plusieurs sites que je jugeais intéressants.</p>
-      <p class="text">J’ai bien conscience qu’il faudra les retravailler et surtout les tester pour réussir à tirer le meilleur de chacune d’entre elles. Elles ne sont pas définitives dans l’état et sont vouées à être améliorées avec le temps.</p>
-      <div></div>
+    <section id="sectionsearch" class="search">
+      <h2 class="search__subtitle subtitle">Recherches</h2>
+      <p class="search__text search__text--projet text bold">Afin de mieux appréhender mon projet ainsi que de me permettre d’imaginer des solutions réalisables, j’ai fais des audits de plusieurs sites que je jugeais intéressants.</p>
+      <p class="search__text search__text--rework text">J’ai bien conscience qu’il faudra continuer de les améliorer et surtout les tester pour réussir à tirer le meilleur de chacune d’entre elles. Elles ne sont pas définitives dans l’état et sont vouées à être améliorées avec le temps.</p>
 
-      <article class="swiper mySwiper">
-        <h3 class="">Titre</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio architecto, cupiditate numquam aperiam quas optio dignissimos, dolores sit nulla reprehenderit sapiente ipsam odit, expedita autem provident quibusdam adipisci quidem! Esse?</p>
-        <div>
-          <a href="">
-            <div></div>
-            <span>Découvrir le site</span>
-            <span></span>
-          </a>
-        </div>
-        <div class="swiper-button-prev slider-arrow">gauche</div>
-        <div class="swiper-button-next slider-arrow">droite</div>
-        <div class="swiper-pagination"></div>
-      </article>
+      
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
 
-      <div></div>
+    <!-- Mdn -->
+    <article class=" study swiper-slide">
+
+      <h3 class="study__title">MDN</h3>
+      <p class="study__description bold">MDN est l'acronyme de Mozilla Developer Network. C’est est un site de théorie reprenant plusieurs langages de code. Pour ce projet, je me suis surtout concentré sur la partie liée au JavaScript.</p>
+      <p class="study__text">On peut retrouver une documentation technique bien détaillée ainsi que des exemples d'utilisation du code, les références web et la compatibilité avec les navigateurs.</p>
+      <p class="study__text">De plus, MDN permet aussi à la communauté de soumettre des modifications afin d'améliorer la base de donnée existante.</p>
+      <p class="study__text">Ce que j'aime particulièrement avec MDN, c'est le coté complet des explications. Il y a tout ce qu'il faut pour comprendre et apprendre à utiliser toute la base de données mise à notre disposition. Base de données dont j'ai appris avec joie qu'elle est créée par les utilisateurs du site.</p>
+
+      <div class="website">
+        <a class="website__link" href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
+          <div class="website__bubble"></div>
+          <span>Découvrir le site</span>
+          <span class="website__arrow fa-solid fa-arrow-right"></span>
+        </a>
+      </div>
+
+    </article>
+    <!-- Codepen -->
+    <article class="study swiper-slide">
+            <h3 class="study__title">Codepen</h3>
+            <p class="study__description bold">Codepen est une plateform participative et collaborative qui permet aux développeurs de coder, tester et mettre en ligne leur travail.</p>
+            <p class="study__text">La fonctionnalité première de Codepen est son éditeur de code et la visualisation qui va avec. Il est possible de coder en temps réel et de voir les changements s'oppérer en direct.</p>
+            <p class="study__text">Une autre fonctionnalité qui fait l'âme de codepen, c'est le fait de pouvoir poster du code éditable par tous. N'importe qui peut prendre un bout de code, le modifier et le sauvegarder.</p>
+            <p class="study__text">Ce que j'aime beaucoup avec codepen c'est son acceccibilité et son coté « free to play ». Tout le monde peut y avoir accès, c'est facile d'utilisation et c'est créer par et pour une communauté qui le fait vivre.</p>
+    
+            <div class="website">
+              <a class="website__link" href="https://codepen.io/">
+                <div class="website__bubble"></div>
+                <span>Découvrir le site</span>
+                <span class="website__arrow fa-solid fa-arrow-right"></span>
+              </a>
+            </div>
+    </article>
+    <!-- Ia -->
+    <article class="study swiper-slide">
+      <h3 class="study__title">IA</h3>
+      <p class="study__description bold">Nous sommes probablement en train de vivre une véritable révolution technique avec l'arrivée des intelligences artificielles. Que se soit dans le monde de l'art, de la musique mais aussi dans des domaines plus techniques. Et le Webdesign ne fait pas exeption.</p>
+      <p class="study__text">Je trouve que les IA sont un outil incroyable pour ce qui est de la créativiter ou encore de l'aide qu'elle peut apporter. Dans l'automatisation par exemple. &Agrave; titre personnel, il m'est arrivé d'utiliser Chatgpt pour me débloquer dans un code (même ce n'est pas encore tout à fait au point) ou d'utiliser MidJourney pour me donner des idées de designs.</p>
+      <p class="study__text">Cependant, il ne faudrait pas que l'outil dépasse l'utilisateur et que les étudiants viennent à tout faire via ce genre de moyen.</p>
+
+      <div class="website">
+        <a class="website__link" href="https://chat.openai.com/">
+          <div class="website__bubble"></div>
+          <span>Découvrir le site</span>
+          <span class="website__arrow fa-solid fa-arrow-right"></span>
+        </a>
+      </div>
+    </article>
+    <!-- Jeux d'apprentissages -->
+    <article class="study swiper-slide">
+      <h3 class="study__title">Jeux d'apprentissages</h3>
+      <p class="study__description bold">Peu importe ce que vous désirez apprendre, vous pouvez être sûr qu'il existe des passionnés qui ont créés un ou des jeux afin de partager leur passion au plus grand nombre. Et le Javascript, comme les autres types de langages, n'est pas en reste. </p>
+      <p class="study__text">J'ai principalement tester CodeCombat. Le jeu permet d'apprendre plusieurs langages mais je ne tiendrai compte que de la partie JavaScript pour ce projet. Il s'articule sur plusieurs mécananique bien rodées.</p>
+      <p class="study__text">ll y a une dimension MMORPG qui, à travers des héros et des récompenses, nous permet de nous immerger dans l'univers. Chaque héro a des compétences qui lui sont propres et qui sont utiles pour réussir les différents niveaux.</p>
+      <p class="study__text">Il règne un grand aspect communautaire. Les joueurs ont mis au coeur du projet avec des fonctionnalités telles que des chats vocaux, des forums de discussions ou encore des pages de solutions. Les joueurs ont même la possibilité de créer eux-même leur propre niveau.</p>
+
+      <div class="website">
+        <a class="website__link" href="https://codecombat.com/">
+          <div class="website__bubble"></div>
+          <span>Découvrir le site</span>
+          <span class="website__arrow fa-solid fa-arrow-right"></span>
+        </a>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> -->
+
+  <!-- If we need scrollbar -->
+</div>
+
+
+
     </section>
 
-    <section class="fonctionnality">
-      <h2 class="subtitle">Fonctionnalités</h2>
-      <p class="text">J’ai basé mes fonctionnalités sur ce que j’ai pu trouver lors de mes recherches tout en essayant d’incorporer une dimension d’entraide quand cela était possible.</p>
-      <p class="text">J’ai bien conscience qu’il faudra les retravailler et surtout les tester pour réussir à tirer le meilleur de chacune d’entre elles. Elles ne sont pas définitives dans l’état et sont vouées à être améliorées avec le temps.</p>
+    <section id="sectionfonctionnality" class="fonctionnality">
+      <h2 class="fonctionnality__subtitle subtitle">Fonctionnalités</h2>
+      <p class="fonctionnality__text fonctionnality__text--results text bold">J’ai basé mes fonctionnalités sur ce que j’ai pu trouver lors de mes recherches tout en essayant d’incorporer une dimension d’entraide quand cela était possible.</p>
+      <p class="fonctionnality__text fonctionnality__text--futur text">J’ai bien conscience qu’il faudra les retravailler et surtout les tester pour réussir à tirer le meilleur de chacune d’entre elles. Elles ne sont pas définitives dans l’état et sont vouées à être améliorées avec le temps.</p>
 
       <ul class="fonctionnality__list">
         <li class="fonctionnality__el activefct">Discord</li>
@@ -178,61 +264,79 @@
         <li class="fonctionnality__el">Gamification</li>
       </ul>
 
-      <article class="fonctionnality__article ">
+      <article class="fonctionnality__article fonctionnality__article--discord ">
         <h3 class="fonctionnality__name ">Discord</h3>
         <p class="fonctionnality__description  text">La première chose à mettre en place sera un Discord commun à la classe. Ce dernier permet à tous les étudiants de travailler ensemble s’ils le désirent. Le but est de permettre à tout le monde d’avoir un discord commun et d’éviter que de petit groupe ne se forme.</p>
       </article>
 
-      <article class="fonctionnality__article hidden">
+      <article class="fonctionnality__article fonctionnality__article--game hidden">
         <h3 class="fonctionnality__name ">Mini-jeux</h3>
-        <p class="fonctionnality__description  text">Il existe beaucoup de jeux sur internet permettant d’apprendre à coder et le JavaScript ne fait pas exception à la règle. Je ne compte pas du tout leur faire concurrence. Mais j’aimerai proposer un petit système de défis.</p>
-        <p class="fonctionnality__description  text">Chaque semaine, à une heure précise, une sorte de “donjon” s’ouvrira. Il sera composé de plusieurs petits défis de code. Ces derniers seront à faire par équipe ou en solitaire. Plusieurs salons vocaux seront mis à disposition sur le discord. A la fin du temps imparti, chaque participant recevra des récompenses. Des bonus seront donnés aux groupes ayant le plus performés.</p>
-        <p class="fonctionnality__description  text">Pourquoi ne pas imaginer aussi faire de petits événements pour fêter Pâques ou alors la Saint Nicolas.</p>
+        <p class="fonctionnality__description fonctionnality__description--game  text">Il existe beaucoup de jeux sur internet permettant d’apprendre à coder et le JavaScript ne fait pas exception à la règle. Je ne compte pas du tout leur faire concurrence. Mais j’aimerai proposer un petit système de défis.</p>
+        <p class="fonctionnality__description fonctionnality__description--game text">Chaque semaine, à une heure précise, une sorte de &laquo;&hairsp;donjon&hairsp;&raquo; s’ouvrira. Il sera composé de plusieurs petits défis de code. Ces derniers seront à faire par équipe ou en solitaire. Plusieurs salons vocaux seront mis à disposition sur le discord. &Agrave; la fin du temps imparti, chaque participant recevra des récompenses. Des bonus seront donnés aux groupes ayant le plus performés.</p>
+        <p class="fonctionnality__description fonctionnality__description--game text">Pourquoi ne pas imaginer aussi faire de petits événements pour fêter Pâques ou alors la Saint Nicolas.</p>
       </article>
 
-      <article class="fonctionnality__article hidden">
+      <article class="fonctionnality__article fonctionnality__article--lesson hidden">
         <h3 class="fonctionnality__name ">Cours de JS</h3>
         <p class="fonctionnality__description  text">J’aimerai intégrer les exercices de Monsieur Terrasse. Ce qui permettra d’avoir une plateforme les répertoriant. Les étudiants pourront y avoir accès que ce soit durant les heures de cours ou alors chez eux pour s'entraîner.</p>
       </article>
 
-      <article class="fonctionnality__article hidden">
+      <article class="fonctionnality__article fonctionnality__article--help hidden">
         <h3 class="fonctionnality__name ">Demande d'aide</h3>
-        <p class="fonctionnality__description  text">Comme dans tout bon site d’entraide, je compte instaurer un système de question-réponse. Ce dernier pourra être anonyme et se compose de plusieurs éléments avec en autres :</p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+        <p class="fonctionnality__description fonctionnality__description--help text">Comme dans tout bon site d’entraide, je compte instaurer un système de question-réponse. Ce dernier pourra être anonyme et se compose de plusieurs éléments avec en autres&hairsp;:</p>
+        <ul class="fonctionnality__exemples">
+          <li class="fonctionnality__exemple">Un statut (urgent ou non)</li>
+          <li class="fonctionnality__exemple">Une description</li>
+          <li class="fonctionnality__exemple">Les fichiers liés à la question (images, fichiers de code)</li>
         </ul>
-        <p class="fonctionnality__description  text">Il y aura un espace commentaire pour permettre aux étudiants et aux professeurs le souhaitant de donner leur avis. Il y aura moyen d’archiver et de mettre en favori une discussion pour la retrouver plus facilement.</p>
+        <p class="fonctionnality__description fonctionnality__description--help text">Il y aura un espace commentaire pour permettre aux étudiants et aux professeurs le souhaitant de donner leur avis. Il y aura moyen d’archiver et de mettre en favori une discussion pour la retrouver plus facilement.</p>
       </article>
 
-      <article class="fonctionnality__article hidden">
+      <article class="fonctionnality__article fonctionnality__article--theory hidden">
         <h3 class="fonctionnality__name ">Espace de théorie</h3>
-        <p class="fonctionnality__description  text">J’aimerai mettre en place une documentation. Cette dernière sera validée par l’école et les professeurs afin d’être conforme à ce que l’on apprend en cours. On pourra également y retrouver les slides vus en cours ou des petits articles écrits par les étudiants et validés par les professeurs ou directement rédigés par ces derniers.\n\nLe but, à termes, serait d’avoir une documentation personnalisée par les élèves.</p>
+        <p class="fonctionnality__description fonctionnality__description--theory text">J’aimerai mettre en place une documentation. Cette dernière sera validée par l’école et les professeurs afin d’être conforme à ce que l’on apprend en cours. On pourra également y retrouver les slides vus en cours ou des petits articles écrits par les étudiants et validés par les professeurs ou directement rédigés par ces derniers. Le but, à termes, serait d’avoir une documentation personnalisée par les élèves.</p>
       </article>
 
-      <article class="fonctionnality__article hidden">
+      <article class="fonctionnality__article fonctionnality__article--month hidden">
         <h3 class="fonctionnality__name ">JS Monthly</h3>
-        <p class="fonctionnality__description  text">A l’instar de l’Inktober, j’aimerai mettre aussi en place un petit événement qui durerait un mois. Chaque jour, les étudiants auront un petit code à réaliser. Quelque chose de relativement simple qui ne prendrait pas beaucoup de ligne. A faire en équipe ou en solo. On pourrait le poster à la fin dans la section dédiée et voir ainsi comment les autres étudiants ont réalisé l’exercice.</p>
+        <p class="fonctionnality__description  text">&Agrave; l’instar de l’Inktober, j’aimerai mettre aussi en place un petit événement qui durerait un mois. Chaque jour, les étudiants auront un petit code à réaliser. Quelque chose de relativement simple qui ne prendrait pas beaucoup de ligne. &Agrave; faire en équipe ou en solo. On pourrait le poster à la fin dans la section dédiée et voir ainsi comment les autres étudiants ont réalisé l’exercice.</p>
       </article>
 
-      <article class="fonctionnality__article hidden">
+      <article class="fonctionnality__article fonctionnality__article--gamification hidden">
         <h3 class="fonctionnality__name ">Gamification</h3>
         <p class="fonctionnality__description  text">Je pense aussi instauré un système de ranking afin de proposer aux élèves les plus assidus des cosmétiques pour personnaliser son avatar. Il y aura un système de rank et de division semblable à celui des jeux populaires.</p>
         <p class="fonctionnality__description  text">Il faudra cependant faire attention que cette fonctionnalité ne crée par un clivage entre les élèves, chose à éviter autant que possible.</p>
       </article>
+
+      <div class="fonctionnality__froggy"></div>
+      <div class="fonctionnality__pirate"></div>
+
     </section>
 
-    <section class="presentation">
-      <h2 class="subtitle">Présentation</h2>
-      <p class="text">Mon projet étant déjà connu de mes professeurs, je me contenterai d’une brève présentation de mon sujet ainsi que de l’hypothèse définitive afin de recontextualiser mon travail. Je reviendrai quand même sur le nom qui a changé pour éviter tout parallèle avec l’insulte anglaise.</p>
-      <p class="text">J’aimerai faire une sorte de comparaison “avant après” de mon site en juin et de la version d’août en revenant sur les points à améliorer, expliquer ce que j’ai mis en place pour répondre à la demande de mes professeurs.</p>
+    <section id="sectionpresentation" class="presentation">
+      <h2 class="presentation__subtitle subtitle">Présentation</h2>
+      <p class="presentation__text presentation__text--projet text">Mon projet étant déjà connu de mes professeurs, je me contenterai d’une brève présentation de mon sujet ainsi que de l’hypothèse définitive afin de recontextualiser mon travail. Je reviendrai quand même sur le nom qui a changé pour éviter tout parallèle avec l’insulte anglaise.</p>
+      <p class="presentation__text presentation__text--presentation text">J’aimerai faire une sorte de comparaison &laquo;&hairsp;avant après&hairsp;&raquo; de mon site en juin et de la version d’août en revenant sur les points à améliorer, expliquer ce que j’ai mis en place pour répondre à la demande de mes professeurs.</p>
       <div class="presentation__img"></div>
-      <p class="text">C’est un projet qui me touche personnellement. D’une part parce que j’apprécie beaucoup le JavaScript et tous les langages qui s’y rapporte, d’une autre part parce que j’ai toujours eu à cœur d’aider quand je le pouvais. </p>
+      <p class="presentation__text presentation__text--conclusion text">C’est un projet qui me touche personnellement. D’une part parce que j’apprécie beaucoup le JavaScript et tous les langages qui s’y rapporte, d’une autre part parce que j’ai toujours eu à cœur d’aider quand je le pouvais. </p>
     </section>
 
   </main>
 
+
+  <footer class="footer"> 
+    <ul class="otherlink">
+      <li class="otherlink__el"><a class="otherlink__link" href="">Ui-Kit</a></li>
+      <li class="otherlink__el"><a class="otherlink__link" href="">Crédits</a></li>
+      <li class="otherlink__el"><a class="otherlink__link" href="">Vidéos</a></li>
+    </ul>
+
+    <p class="credits">
+      <a class="credits__link" href="index.html">©Nathan Demasy</a>
+      <span id="year"></span>
+      <a href="http://dwm.re/"><img class="credits__dwt" src="../assets/images/dwt.svg" alt="logo DWT"></a>
+    </p>
+  </footer>
 
 
 </body>

@@ -29,6 +29,7 @@
     "sass-loader": "^12.4.0"
   },
   "dependencies": {
-    "swiper": "^10.1.0"
+    "gsap": "^3.12.2",
+    "swiper": "^10.2.0"
   }
 }
